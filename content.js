@@ -45,7 +45,7 @@ document.addEventListener('mouseup', function(e) {
             if (selectedText === window.getSelection().toString().trim()) {
                 createPopup(e.pageX + 5, e.pageY + 5);
             }
-        }, 500);
+        }, 300);
     } else if (popup) {
         document.body.removeChild(popup);
         popup = null;
