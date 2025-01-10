@@ -1,0 +1,24 @@
+.translate-popup {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 3px;
+    z-index: 10000;
+    font-family: Arial, sans-serif;
+}
+
+.translate-button {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.translate-button:hover {
+    opacity: 0.8;
+}
