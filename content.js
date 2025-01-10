@@ -13,7 +13,7 @@ function createPopup(x, y) {
     
     const translateButton = document.createElement('img');
     translateButton.className = 'translate-button';
-    translateButton.src = chrome.runtime.getURL('icon.png');
+    translateButton.src = chrome.runtime.getURL('popup.png');
     
     translateButton.addEventListener('mousedown', (e) => {
         // Prevent the document mousedown from handling this event
