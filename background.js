@@ -1,3 +1,10 @@
+// Handle extension icon click
+chrome.action.onClicked.addListener(() => {
+  chrome.tabs.create({
+    url: 'https://mozilla.github.io/pdf.js/web/viewer.html'
+  });
+});
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === 'translate') {
         fetch('http://127.0.0.1:60828/translate', {
