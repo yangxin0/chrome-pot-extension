@@ -41,7 +41,11 @@ function createPopup(x, y) {
 document.addEventListener('mouseup', function(e) {
     selectedText = window.getSelection().toString().trim();
     if (selectedText) {
-        createPopup(e.pageX + 5, e.pageY + 5);
+        setTimeout(() => {
+            if (selectedText === window.getSelection().toString().trim()) {
+                createPopup(e.pageX + 5, e.pageY + 5);
+            }
+        }, 500);
     } else if (popup) {
         document.body.removeChild(popup);
         popup = null;
